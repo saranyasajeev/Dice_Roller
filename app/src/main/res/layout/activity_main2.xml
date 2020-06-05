@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/starting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity2"
+    tools:ignore="MissingClass">
+
+
+
+
+
+    <TextView
+        android:id="@+id/Headline"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Roll The Dice"
+        android:textAlignment="center"
+        android:textColor="#1E72B5"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Headline"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="218dp"
+        app:srcCompat="@drawable/dice" />
+
+    <Button
+        android:id="@+id/Letsstart"
+        android:layout_width="224dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="86dp"
+        android:background="#283880"
+        android:text="Lets..Start"
+        android:textColor="#A91481"
+        android:textColorLink="#76264A"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+
+
+
+</RelativeLayout>

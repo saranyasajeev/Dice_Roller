@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainActivity2"
+    tools:ignore="UnusedNavigation">
+
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.example.myapplication.MainActivity2"
+        android:label="activity_main2"
+        tools:layout="@layout/activity_main2" >
+        <action
+            android:id="@+id/togame"
+            app:destination="@id/mainActivity" />
+    </activity>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.myapplication.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="player_b">Player B</string>
+
+    <string name="game_point">Game Point</string>
+    <string name="game_value">100</string>
+    <string name="game_valueA">0</string>
+    <string name="game_valueB">0</string>
+    <string name="player_a">Player A</string>
+    <string name="gameovermsg">The winner is:</string>
+    <string name="btm_start_game">Start</string>
+    <string name="btm_end_game">Stop</string>
+
+
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:layoutMode="opticalBounds"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+
+
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="397dp"
+            android:layout_height="211dp">
+
+
+            <TextView
+                android:id="@+id/tvPlayerA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif-monospace"
+                android:text="Player A"
+                android:textAlignment="viewEnd"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:text="Player A" />
+
+            <TextView
+                android:id="@+id/tvGamePointA"
+                android:layout_width="47dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif-monospace"
+                android:text="0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tvPlayerA"
+                app:layout_constraintHorizontal_bias="0.45"
+
+                app:layout_constraintStart_toStartOf="@+id/tvPlayerA"
+
+                app:layout_constraintTop_toBottomOf="@+id/tvPlayerA"
+
+
+                app:layout_constraintVertical_bias="0.087"
+                tools:ignore="MissingConstraints"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/tvGamePointB"
+                android:layout_width="42dp"
+                android:layout_height="19dp"
+
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif-monospace"
+
+                android:text="0"
+
+                android:textSize="18sp"
+
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tvPlayerB"
+
+
+                app:layout_constraintStart_toStartOf="@+id/tvPlayerB"
+                app:layout_constraintTop_toBottomOf="@+id/tvPlayerB"
+
+                app:layout_constraintVertical_bias="0.074"
+                tools:ignore="MissingConstraints"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/tvGamePoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="serif-monospace"
+                android:text="GamePoint"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toStartOf="@id/tvPlayerB"
+                app:layout_constraintHorizontal_bias="0.415"
+                app:layout_constraintStart_toEndOf="@id/tvPlayerA"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvgamepoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="serif-monospace"
+                android:text="100"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/tvGamePoint"
+                app:layout_constraintHorizontal_bias="0.482"
+                app:layout_constraintStart_toStartOf="@id/tvGamePoint"
+                app:layout_constraintTop_toBottomOf="@id/tvGamePoint"
+                app:layout_constraintVertical_bias="0.129"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvPlayerB"
+                android:layout_width="102dp"
+                android:layout_height="16dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="serif-monospace"
+                android:text="Player B"
+
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+
+
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:text="Player B" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/dice_image"
+        android:layout_width="140dp"
+        android:layout_height="149dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view"
+        app:srcCompat="@drawable/empty_dice"
+        tools:ignore="MissingConstraints"
+        tools:src="@drawable/dice_1" />
+
+    <Button
+        android:id="@+id/roll_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Roll"
+        app:layout_constraintEnd_toEndOf="@+id/dice_image"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/dice_image"
+        app:layout_constraintTop_toBottomOf="@+id/dice_image"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/gamewinmsg"
+        android:layout_width="333dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:inputType="textPersonName"
+        android:textColorLink="#2A1C41"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roll_button"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="#5C955E"
+        android:text="START"
+        android:textColor="#362027"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gamewinmsg"
+        app:layout_constraintVertical_bias="0.197" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
